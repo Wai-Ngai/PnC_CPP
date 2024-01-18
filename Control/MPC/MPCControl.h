@@ -16,6 +16,8 @@ namespace plt = matplotlibcpp;
 using namespace std;
 using namespace Eigen;
 using namespace OsqpEigen;
+using pnc::control::KinematicModel;
+
 
 namespace{
     const double MAX_STEER = M_PI / 4.0; // maximum steering angle [rad]

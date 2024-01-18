@@ -11,11 +11,11 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 find_package(OsqpEigen REQUIRED)
 
 #PID
-add_executable(pid_demo PID/main.cpp PID/PID_controller.cpp utils/KinematicModel.cpp)
+add_executable(pid_demo PID/pid_controller_test.cpp PID/pid_controller.cpp utils/KinematicModel.cpp)
 target_link_libraries(pid_demo PRIVATE PnC)
 
 #pure pursuit
-add_executable(pure_pursuit_demo Pure_Pursuit/main.cpp  Pure_Pursuit/PurePursuit.cpp utils/KinematicModel.cpp)
+add_executable(pure_pursuit_demo Pure_Pursuit/pure_pursuit_test.cpp  Pure_Pursuit/pure_pursuit.cpp utils/KinematicModel.cpp)
 target_link_libraries(pure_pursuit_demo PRIVATE PnC)
 
 #stanley

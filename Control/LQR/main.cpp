@@ -8,6 +8,8 @@
 #include "../utils/NormalizeAngle.hpp"
 #include "../../matplotlibcpp.h"
 namespace plt = matplotlibcpp;
+using pnc::control::KinematicModel;
+
 
 int main(){
     double dt=0.1; // 时间间隔，单位：s
@@ -49,8 +51,8 @@ int main(){
 
         ugv.updateState(0,delta);//加速度设为0，恒速
 
-        x_.push_back(ugv.x);
-        y_.push_back(ugv.y);
+        x_.push_back(ugv.x_);
+        y_.push_back(ugv.y_);
         //画参考轨迹
         plt::plot(referencePath.refer_x,referencePath.refer_y,"b--");
         plt::grid(true);

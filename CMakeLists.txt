@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 #include(GNUInstallDirs)
 # 创建一个名为chhRobotics_CPP
-# set(PACKAGE_NAME chhRobotics_CPP)
+set(PACKAGE_NAME chhRobotics_CPP)
 
 
 # Library target
@@ -50,7 +50,7 @@ add_executable(main main.cpp)
 target_link_libraries(main PRIVATE PnC)
 
 # 将Control目录作为子目录添加到构建中，并指定输出目录为bin_control。
-add_subdirectory(Control bin_control)
+add_subdirectory(Control bin)
 # 将Planning目录作为子目录添加到构建中，并指定输出目录为bin_planning。
 add_subdirectory(Planning bin_planning)
 

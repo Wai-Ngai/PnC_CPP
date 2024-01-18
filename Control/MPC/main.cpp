@@ -8,6 +8,8 @@
 #include "../../matplotlibcpp.h"
 
 namespace plt = matplotlibcpp;
+using pnc::control::KinematicModel;
+
 
 int main() {
     parameters param;

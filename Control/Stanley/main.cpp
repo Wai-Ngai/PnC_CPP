@@ -6,6 +6,7 @@
 #include "../../matplotlibcpp.h"
 #include "../utils/KinematicModel.h"
 namespace plt = matplotlibcpp;
+using pnc::control::KinematicModel;
 
 #define PI 3.1415926
 
@@ -48,8 +49,8 @@ int main(){
 
         ugv.updateState(0,delta_index[0]); //加速度设为0，恒速
 
-        x_.push_back(ugv.x);
-        y_.push_back(ugv.y);
+        x_.push_back(ugv.x_);
+        y_.push_back(ugv.y_);
         //画图
         plt::plot(refer_x,refer_y,"b--");
         plt::plot(x_, y_,"r");
