@@ -19,7 +19,8 @@ add_executable(pure_pursuit_demo Pure_Pursuit/pure_pursuit_test.cpp  Pure_Pursui
 target_link_libraries(pure_pursuit_demo PRIVATE PnC)
 
 #stanley
-add_executable(stanley_demo Stanley/main.cpp  Stanley/Stanley.cpp utils/KinematicModel.cpp)
+# add_executable(stanley_demo Stanley/main.cpp  Stanley/stanley_controller.cpp utils/KinematicModel.cpp)
+add_executable(stanley_demo Stanley/stanley_controller_test.cpp  Stanley/stanley_controller.cpp utils/KinematicModel.cpp)
 target_link_libraries(stanley_demo PRIVATE PnC)
 
 
