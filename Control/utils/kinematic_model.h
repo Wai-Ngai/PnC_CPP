@@ -40,7 +40,7 @@ public:
     void updateState(double accel, double delta_f);
 
     /**
-     * @brief 将模型离散化后的状态空间表达式
+     * @brief 将模型离散化后的状态空间矩阵 A B
      * 
      * @param ref_delta   参考控制输入
      * @param ref_yaw     参考航向角
