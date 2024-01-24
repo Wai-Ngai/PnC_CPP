@@ -8,7 +8,7 @@
 #include <iostream>
 #include<vector>
 #include<Eigen/Dense>
-#include "../utils/KinematicModel.h"
+#include "../utils/kinematic_model.h"
 #include "OsqpEigen/OsqpEigen.h"
 #include <osqp/osqp.h>
 #include "../../matplotlibcpp.h"

@@ -3,7 +3,7 @@
 //
 #include "MPCControl.h"
 #include "../utils/MyReferencePath.h"
-#include "../utils/KinematicModel.h"
+#include "../utils/kinematic_model.h"
 #include "../utils/NormalizeAngle.hpp"
 #include "../../matplotlibcpp.h"
 

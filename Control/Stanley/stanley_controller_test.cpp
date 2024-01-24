@@ -1,5 +1,5 @@
 #include "stanley_controller.h"
-#include "../utils/KinematicModel.h"
+#include "../utils/kinematic_model.h"
 #include "../../matplotlibcpp.h"
 
 namespace plt = matplotlibcpp;

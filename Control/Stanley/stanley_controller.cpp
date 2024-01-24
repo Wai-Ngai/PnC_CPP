@@ -30,32 +30,32 @@ double StanleyController::NormalizeAngle(double angle)
 }
 
 // 计算需要的误差，包括横向误差，航向误差
-void StanleyController::ComputeLateralErrors(const double x, const double y,
-                                             const double theta, double &e_y,
-                                             double &e_theta)
-{
-    TrajectoryPoint target_point;
-    target_point = QueryNearestPointByPosition(x, y);
+// void StanleyController::ComputeLateralErrors(const double x, const double y,
+//                                              const double theta, double &e_y,
+//                                              double &e_theta)
+// {
+//     TrajectoryPoint target_point;
+//     target_point = QueryNearestPointByPosition(x, y);
     
-    double heading = target_point.heading;
-    const double dx = target_point.x - x;
-    const double dy = target_point.y - y;
-    e_y = sqrt(dx * dx + dy * dy);
+//     double heading = target_point.heading;
+//     const double dx = target_point.x - x;
+//     const double dy = target_point.y - y;
+//     e_y = sqrt(dx * dx + dy * dy);
 
-    double fx = dy * cos(heading) - dx * sin(heading); //横向误差的正负
-    if(fx > 0){
-        e_y = -abs(e_y);
-    }else{
-        e_y = abs(e_y);
-    }
+//     double fx = dy * cos(heading) - dx * sin(heading); //横向误差的正负
+//     if(fx > 0){
+//         e_y = -abs(e_y);
+//     }else{
+//         e_y = abs(e_y);
+//     }
 
-    e_theta = theta - heading; //航向偏差
-    if(e_theta > M_PI){
-        e_theta = -20*M_PI + e_theta;
-    }else if(e_theta < -M_PI){
-        e_theta = 20*M_PI + e_theta;
-    }
-}
+//     e_theta = theta - heading; //航向偏差
+//     if(e_theta > M_PI){
+//         e_theta = -20*M_PI + e_theta;
+//     }else if(e_theta < -M_PI){
+//         e_theta = 20*M_PI + e_theta;
+//     }
+// }
 
 std::vector<double> StanleyController::Control(const std::vector<double> vehcile_state, 
                                                const std::vector<std::vector<double>> reference_path)

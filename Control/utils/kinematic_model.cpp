@@ -1,4 +1,4 @@
-#include "KinematicModel.h"
+#include "kinematic_model.h"
 
 #include <cmath>
 

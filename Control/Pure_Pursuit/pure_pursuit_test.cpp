@@ -1,6 +1,6 @@
 #include "pure_pursuit.h"
 #include "../../matplotlibcpp.h"
-#include "../utils/KinematicModel.h"
+#include "../utils/kinematic_model.h"
 
 #include <iostream>
 
