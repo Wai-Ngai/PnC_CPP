@@ -23,6 +23,8 @@ public:
      */
     ReferenceTrajectory();
 
+    double NormalizeAngle(double angle);
+
     std::vector<double> CalcTrackError(std::vector<double> vehcile_state);
 
     ~ReferenceTrajectory() = default;
