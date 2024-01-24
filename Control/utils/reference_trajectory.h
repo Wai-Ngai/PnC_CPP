@@ -2,6 +2,9 @@
 
 #include <vector>
 
+#define PI 3.1415926
+
+
 namespace pnc{
 namespace control{
 
