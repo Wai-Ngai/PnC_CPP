@@ -29,7 +29,7 @@ add_executable(rear_wheel_feedback_demo Rear_Wheel_Feedback/main.cpp  Rear_Wheel
 target_link_libraries(rear_wheel_feedback_demo PRIVATE PnC)
 
 # lqr控制
-add_executable(lqr_demo LQR/main.cpp  LQR/LQRControl.cpp utils/MyReferencePath.cpp utils/kinematic_model.cpp)
+add_executable(lqr_demo LQR/lqr_controller_test.cpp  LQR/lqr_controller.cpp utils/MyReferencePath.cpp utils/kinematic_model.cpp)
 target_link_libraries(lqr_demo PRIVATE PnC)
 
 ## mpc控制 osqp待实现

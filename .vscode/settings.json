@@ -53,7 +53,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "lqr_controller_test": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
