@@ -4,6 +4,7 @@ project(chhRobotics_CPP)
 
 # 指定使用的C++标准
 set(CMAKE_CXX_STANDARD 14) 
+set(CMAKE_BUILD_TYPE Debug)
 
 
 #include(GNUInstallDirs)

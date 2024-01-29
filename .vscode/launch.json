@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/bin/lqr_demo",
+            "program": "${workspaceFolder}/build/bin/lqr_demo",  // 调试的可执行文件绝对路径
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -27,7 +27,7 @@
                     "ignoreFailures": true
                 }
             ],
-            // "preLaunchTask": "Build",
+            "preLaunchTask": "Build",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
