@@ -37,7 +37,7 @@ add_executable(mpc_demo MPC/main.cpp  MPC/MPCControl.cpp utils/kinematic_model.c
 target_link_libraries(mpc_demo PRIVATE PnC OsqpEigen::OsqpEigen)
 
 # MPC实现轨迹跟踪，cppad/ipopt 实现
-# add_executable(mpc_speed_steel_demo Model_Predictive_Speed_Steel_Control/main.cpp Model_Predictive_Speed_Steel_Control/ModelPredictiveControl.cpp)
-# target_link_libraries(mpc_speed_steel_demo PRIVATE ipopt PnC)
+add_executable(mpc_speed_steel_demo Model_Predictive_Speed_Steel_Control/main.cpp Model_Predictive_Speed_Steel_Control/ModelPredictiveControl.cpp)
+target_link_libraries(mpc_speed_steel_demo PRIVATE ipopt PnC)
 
 
