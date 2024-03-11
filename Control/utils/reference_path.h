@@ -58,7 +58,7 @@ public:
      */
     refTraj calcRefTrajectory(std::vector<double> vehcile_state, parameters param, double dl = 1.0);
 
-    ~ReferencePath() == default;
+    ~ReferencePath() = default;
 public:
     std::vector<std::vector<double>> refer_path; // x,y,heading,kappa
     std::vector<double> refer_x,ref_y;

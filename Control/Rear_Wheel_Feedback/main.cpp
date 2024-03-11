@@ -5,11 +5,11 @@
 #include "../utils/MyReferencePath.h"
 #include "../../matplotlibcpp.h"
 #include "../utils/kinematic_model.h"
-#include "../utils/reference_trajectory.h"
+#include "../utils/reference_path.h"
 
 namespace plt = matplotlibcpp;
 using pnc::control::KinematicModel;
-using pnc::control::ReferenceTrajectory;
+using pnc::control::ReferencePath;
 
 #define PI 3.1415926
 

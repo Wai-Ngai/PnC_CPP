@@ -4,7 +4,6 @@
 #include "MPCControl.h"
 #include "../utils/MyReferencePath.h"
 #include "../utils/kinematic_model.h"
-#include "../utils/NormalizeAngle.hpp"
 #include "../../matplotlibcpp.h"
 
 namespace plt = matplotlibcpp;
