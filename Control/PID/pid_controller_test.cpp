@@ -75,7 +75,7 @@ int main()
                          pow(reference_path[min_index][1] - vehcile_state[1], 2));
         double theta = alpha - model.psi_;
         double error_y = ld * sin(theta);
-        double delta_f = PID.calcOutput(error_y, 0.01);
+        double delta_f = PID.CalcOutput(error_y, 0.01);
 
         // 更新车辆状态
         model.updateState(0, delta_f);
